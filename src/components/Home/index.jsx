@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/logo-s.png'
+import me from '../../assets/images/prome.png'
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo';
@@ -43,19 +44,24 @@ const Home = () => {
                  Frontend Developer / Blockchain Expert / Crypto enthusiast
              </h2>
              <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+            
           </div>
-    <div class="sky">
 
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
+          
+              <img src={me} alt="" className='avatar' />
+          
+
+        <div class="sky">
         
-    </div>
-    {/* <Logo/> */}
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              </div>   
+     {/* <Logo/>  */}
       </div>
     );
 }

@@ -102,6 +102,7 @@ of 45 degree of falling star */
     filter: drop-shadow(0 0 6px #d7dff0);
     -webkit-animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
     animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+    z-index: 0;
 }
 
 
@@ -120,6 +121,7 @@ of 45 degree of falling star */
     border-radius: 100%;
     -webkit-animation: shining 3000ms ease-in-out infinite;
     animation: shining 3000ms ease-in-out infinite;
+    z-index: 0;
 }
 
 .star::after {
@@ -315,4 +317,13 @@ of 45 degree of falling star */
         -webkit-transform: translateX(270px);
         transform: translateX(270px);
     }
+}
+
+.avatar {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 1;
 }
