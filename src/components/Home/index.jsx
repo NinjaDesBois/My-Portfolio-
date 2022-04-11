@@ -55,7 +55,7 @@ const Home = () => {
         <div class="star"></div>
         
     </div>
-    <Logo/>
+    {/* <Logo/> */}
       </div>
     );
 }
