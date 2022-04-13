@@ -4,7 +4,7 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import me from '../../assets/images/prome.png'
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
-import Logo from './Logo';
+
 
 const Home = () => {
     const[letterClass , setLetterClass]= useState('text-animate')
@@ -61,7 +61,7 @@ const Home = () => {
               <div class="star"></div>
               <div class="star"></div>
               </div>   
-     {/* <Logo/>  */}
+     
       </div>
     );
 }

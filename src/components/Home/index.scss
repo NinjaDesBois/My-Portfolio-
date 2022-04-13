@@ -327,3 +327,106 @@ of 45 degree of falling star */
     right: 10%;
     z-index: 1;
 }
+
+
+/* Extra small devices (phones, up to 480px) */
+
+@media screen and (max-width: 767px) {
+    .home-page {
+        width: 60vw;
+        height: 90vh;
+        .text-zone {
+            position: absolute;
+            left: 35%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100vw;
+            height: 100vh;
+            max-width: 767px;
+        }
+        h1 {
+            color: #fff;
+            font-size: 35px;
+            margin: 0;
+            font-family: 'Coolvetica';
+            font-weight: 400;
+            &::before {
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                color: #ffd700;
+                font-size: 18px;
+                position: absolute;
+                margin-top: -15px;
+                left: 15px;
+                opacity: 0.6;
+            }
+            &::after {
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                color: #ffd700;
+                font-size: 18px;
+                position: absolute;
+                margin-top: 18px;
+                margin-left: 20px;
+                animation: fadeIn 1s 1.7s backwards;
+                opacity: 0.6;
+            }
+        }
+    }
+    h2 {
+        color: #8d8d8d;
+        margin-top: 20px;
+        font-weight: 400;
+        font-style: 11px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+        max-width: 250px;
+    }
+    /* Here using -webkit, we make angle 
+    of 45 degree of falling star */
+    .sky {
+        position: relative;
+        left: 50%;
+        width: 50%;
+        height: 50%;
+        margin-top: 250px;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);
+    }
+    /* Here we are making roundabout balls  */
+    .star {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 2px;
+        border-radius: 885px;
+        background: linear-gradient(-45deg, #eef0f5, rgba(0, 0, 255, 0));
+        -webkit-filter: drop-shadow(0 0 6px #eef1f8);
+        filter: drop-shadow(0 0 6px #d7dff0);
+        -webkit-animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+        animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+        z-index: 0;
+    }
+    .avatar {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 6%;
+        left: 110%;
+        z-index: 1;
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+
+/* tablets/desktops and up  */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// /* large like desktops and up */
+// @media screen and (min-width: 1200px) {...}
