@@ -92,19 +92,19 @@ const Contact = () => {
         <div className="info-map">
           Bahassi Souhib,
           <br />
-          Morocco
+          Belgium
           <br />
-          8, Rue Al Kahira caire,<br />
-          Rabat 10090<br />
+          Boulevard de l'yser,<br />
+          Charleroi 6000<br />
           <br />
           <span>bahassisohaib@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[34.018474,-6.835128]} zoom={13}>
+          <MapContainer center={[50.41026833250275,4.442345023034188]} zoom={13}>
             <TileLayer 
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[34.018474,-6.835128]}>
+            <Marker position={[50.41026833250275,4.442345023034188]}>
               <Popup>Souhib works here, come over for a cup of Morrocan mint tea :)</Popup>
             </Marker>
           </MapContainer>
